@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "name": "Applitools",
+  "commands": [
+    {
+      "name": "Run visual check",
+      "identifier": "applitools.eyesCheck",
+      "script": "./EyesCheck.js"
+    },
+    {
+      "name": "API Key",
+      "identifier": "applitools.apiKey",
+      "script": "./EyesSettings.js"
+    },
+    {
+      "name": "Server URL",
+      "identifier": "applitools.serverURL",
+      "script": "./EyesSettings.js",
+      "handler": "serverUrl"
+    }
+  ]
+}
